@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationSplitView{
+            FileBrowserView()
+        } content: {
+            CodeEditorView()
+        } detail: {
+            LuaEmulatorView()
         }
-        .padding()
+        .toolbar {
+            ToolbarItem(placement: .primaryAction, content: {
+                Image(systemName: "play.fill")
+            })
+        }
     }
 }
 
