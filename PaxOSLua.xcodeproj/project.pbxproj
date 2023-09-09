@@ -99,6 +99,8 @@
 		34142A392AABAE090035D613 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34142A382AABAE090035D613 /* Operations.swift */; };
 		34142A3B2AABAECB0035D613 /* FileBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34142A3A2AABAECB0035D613 /* FileBrowserView.swift */; };
 		34142A3D2AABB04B0035D613 /* CodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34142A3C2AABB04B0035D613 /* CodeEditorView.swift */; };
+		34142A772AACAFB40035D613 /* FilesObserverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34142A762AACAFB40035D613 /* FilesObserverModel.swift */; };
+		34142A792AACCE200035D613 /* ProjectFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34142A782AACCE200035D613 /* ProjectFilesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +234,8 @@
 		34142A382AABAE090035D613 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		34142A3A2AABAECB0035D613 /* FileBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserView.swift; sourceTree = "<group>"; };
 		34142A3C2AABB04B0035D613 /* CodeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditorView.swift; sourceTree = "<group>"; };
+		34142A762AACAFB40035D613 /* FilesObserverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesObserverModel.swift; sourceTree = "<group>"; };
+		34142A782AACCE200035D613 /* ProjectFilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFilesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,12 +296,14 @@
 				341427792AA7A6290035D613 /* ContentView.swift */,
 				34142A352AABAD890035D613 /* FileBrowserModel.swift */,
 				34142A3A2AABAECB0035D613 /* FileBrowserView.swift */,
+				34142A762AACAFB40035D613 /* FilesObserverModel.swift */,
 				3414292E2AAB791A0035D613 /* Info.plist */,
 				341427A22AA7A9C10035D613 /* LuaEmulatorView.swift */,
 				34142A382AABAE090035D613 /* Operations.swift */,
 				341427802AA7A62B0035D613 /* PaxOSLua.entitlements */,
 				341427772AA7A6290035D613 /* PaxOSLuaApp.swift */,
 				3414277D2AA7A62B0035D613 /* Preview Content */,
+				34142A782AACCE200035D613 /* ProjectFilesManager.swift */,
 				341429E52AAB9E830035D613 /* SimulatorModel.swift */,
 				341429112AAA3DBB0035D613 /* test */,
 			);
@@ -612,6 +618,7 @@
 				341429472AAB89A50035D613 /* LuaMacrosBridge.swift in Sources */,
 				341429A42AAB8A020035D613 /* lvm.c in Sources */,
 				341427A32AA7A9C10035D613 /* LuaEmulatorView.swift in Sources */,
+				34142A772AACAFB40035D613 /* FilesObserverModel.swift in Sources */,
 				341429BB2AAB8A020035D613 /* lbaselib.c in Sources */,
 				341429B02AAB8A020035D613 /* linit.c in Sources */,
 				341429AE2AAB8A020035D613 /* ldebug.c in Sources */,
@@ -624,6 +631,7 @@
 				341429B32AAB8A020035D613 /* ltable.c in Sources */,
 				341429982AAB8A020035D613 /* lstrlib.c in Sources */,
 				3414294C2AAB89A50035D613 /* ExtraTypes.swift in Sources */,
+				34142A792AACCE200035D613 /* ProjectFilesManager.swift in Sources */,
 				341429502AAB89A50035D613 /* Boolean.swift in Sources */,
 				341429992AAB8A020035D613 /* lauxlib.c in Sources */,
 				341429B72AAB8A020035D613 /* lobject.c in Sources */,

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var PFM = ProjectFilesManager.shared
     var body: some View {
         NavigationSplitView{
             FileBrowserView()
@@ -21,6 +22,14 @@ struct ContentView: View {
                 Image(systemName: "play.fill")
             })
         }
+        .disabled(PFM.showPopup != nil)
+        .blur(radius: (PFM.showPopup != nil) ? 5 : 0)
+        .opacity((PFM.showPopup != nil) ? 0.4 : 1)
+        .overlay(alignment: .center, content: {
+            if let popupView = PFM.showPopup {
+                AnyView(popupView)
+            }
+        })
     }
 }
 
